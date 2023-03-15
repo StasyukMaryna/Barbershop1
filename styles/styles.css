@@ -1,0 +1,235 @@
+:root {
+  --maiin-title-color: #ffffff;
+  --second-title-color: #303030;
+  --text-color: #555555;
+  --accent-color: #ff6c00;
+  --main-button-color: #ffffff;
+  --second-button-color: #303030;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1155px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.button {
+  width: 151px;
+  height: 40px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.title {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+}
+
+.suptitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.suptitle-theme-light {
+  color: var(--second-title-color);
+}
+
+.suptitle-theme-dark {
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.section-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.02em;
+}
+/*------------------- HEADER----------------- */
+/*------------------- HEADER----------------- */
+/*------------------- HERО----------------- */
+.hero {
+  padding-top: 112px;
+  padding-bottom: 183px;
+  background: rgba(25, 28, 38, 0.2);
+}
+
+.left-side {
+  display: none;
+}
+
+.hero-list {
+  display: none;
+}
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+  /* gap: 20px 31px; */
+  margin-left: 31px;
+}
+
+.hero-title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+  color: var(--maiin-title-color);
+}
+
+.suptitle {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.suptitle::before {
+  content: "";
+  display: inline-block;
+  width: 60px;
+  height: 1px;
+  background-color: currentColor;
+}
+
+.hero-title {
+  margin-bottom: 20px;
+}
+
+.section-description {
+  margin-bottom: 20px;
+  text-align: left;
+}
+/*------------------- HERО----------------- */
+/*------------------- ABOUT----------------- */
+.about {
+  padding-top: 84px;
+  padding-bottom: 84px;
+  margin-left: 31px;
+  margin-right: 31px;
+}
+
+.about-img {
+  display: none;
+}
+
+.title-dark {
+  font-size: 28px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  color: var(--second-button-color);
+}
+
+.about-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+  margin-bottom: 40px;
+}
+/*------------------- ABOUT----------------- */
+/*------------------- SERVICE-PRICES----------------- */
+.services-prices {
+  padding-top: 84px;
+  padding-bottom: 84px;
+  /* margin-left: 31px; */
+  background-color: #111319;
+  background-image: url(../images/bg-service-prices-mob.jpg);
+  margin-left: auto;
+  margin-right: auto;
+  background-size: cover;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .service-prices {
+    background-color: #111319;
+    background-image: url(../images/bg-service-prices-mob-2x.jpg);
+  }
+}
+
+.title {
+  font-size: 42px;
+  line-height: 1.16;
+  color: var(--maiin-title-color);
+}
+
+.services-prices-table {
+  padding: 30px;
+  margin-top: 44px;
+  margin-left: 31px;
+  margin-right: 31px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: auto;
+  height: auto;
+  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+
+.services-prices-list {
+  padding-left: 0;
+}
+
+.section-description {
+  /* margin-top: 0; */
+  font-size: 14px;
+  line-height: 2.14;
+  color: #9da4bd;
+}
+
+.price::before {
+  content: "";
+  display: inline-block;
+  height: 1px;
+  width: 30%;
+  background: rgba(157, 164, 189, 0.12);
+}
+
+.price {
+  margin-left: 31px;
+  text-align: right;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2.14;
+  text-align: right;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+
+.btn {
+  margin: 0 auto;
+  display: block;
+  background: transparent;
+}
+/*------------------- SERVICE-PRICES----------------- */
