@@ -239,4 +239,28 @@ body {
   padding-bottom: 84px;
 }
 
+.about-why-we {
+  width: 193px;
+  height: 133px;
+  background: #f7f7f7;
+}
+
+.why-we-number {
+  display: flex;
+  gap: 2px;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.35;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #303030;
+}
+
+.why-we-number::after {
+  content: "+";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.37;
+  color: var(--accent-color);
+}
 /*------------------- WHY-WE----------------- */
