@@ -50,6 +50,16 @@ body {
   letter-spacing: 0.05em;
 }
 
+.title-dark {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+  color: var(--second-button-color);
+}
+
 .suptitle {
   font-weight: 600;
   font-size: 11px;
@@ -102,6 +112,7 @@ body {
   line-height: 1.16;
   letter-spacing: 0.05em;
   color: var(--maiin-title-color);
+  margin-bottom: 20px;
 }
 
 .suptitle {
@@ -119,10 +130,6 @@ body {
   background-color: currentColor;
 }
 
-.hero-title {
-  margin-bottom: 20px;
-}
-
 .section-description {
   margin-bottom: 20px;
   text-align: left;
@@ -138,13 +145,6 @@ body {
 
 .about-img {
   display: none;
-}
-
-.title-dark {
-  font-size: 28px;
-  line-height: 1.17;
-  letter-spacing: 0.05em;
-  color: var(--second-button-color);
 }
 
 .about-text {
@@ -233,3 +233,10 @@ body {
   background: transparent;
 }
 /*------------------- SERVICE-PRICES----------------- */
+/*------------------- WHY-WE----------------- */
+.why-we {
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+
+/*------------------- WHY-WE----------------- */
