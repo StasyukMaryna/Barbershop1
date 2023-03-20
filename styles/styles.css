@@ -21,10 +21,11 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1155px;
+  /* max-width: 1155px; */
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .button {
@@ -79,7 +80,7 @@ body {
 .section-description {
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.62;
+  line-height: 1.19;
   letter-spacing: 0.02em;
 }
 /*------------------- HEADER----------------- */
@@ -132,6 +133,7 @@ body {
 
 .section-description {
   margin-bottom: 20px;
+  max-width: 306px;
   text-align: left;
 }
 /*------------------- HERО----------------- */
@@ -266,9 +268,9 @@ body {
   margin-left: 31px;
 }
 
-.benefits-container {
+/* .benefits-container {
   display: flex;
-}
+} */
 
 .benefits-list {
   display: flex;
