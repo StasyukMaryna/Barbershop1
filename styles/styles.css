@@ -7,6 +7,25 @@
   --second-button-color: #303030;
 }
 
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
 }
@@ -22,8 +41,8 @@ body {
 .container {
   width: 100%;
   /* max-width: 1155px; */
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 31px;
+  padding-right: 31px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -59,6 +78,7 @@ body {
   line-height: 1.16;
   letter-spacing: 0.05em;
   color: var(--second-button-color);
+  margin-bottom: 20px;
 }
 
 .suptitle {
@@ -84,12 +104,47 @@ body {
   letter-spacing: 0.02em;
 }
 /*------------------- HEADER----------------- */
+.header-list {
+  display: none;
+}
+
+.header-link-tel {
+  display: none;
+}
+
+.header-button {
+  display: none;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  padding-top: 40px;
+}
+
+.logo-icon {
+  fill: #ffffff;
+}
 /*------------------- HEADER----------------- */
 /*------------------- HERО----------------- */
+
 .hero {
-  padding-top: 112px;
+  padding-top: 208px;
   padding-bottom: 183px;
-  background: rgba(25, 28, 38, 0.2);
+  background-color: rgba(25, 28, 38, 0.2);
+  background-image: url(../images/bg-image-hero-1-mob.jpg);
+  margin-left: auto;
+  margin-right: auto;
+  background-size: cover;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-color: rgba(25, 28, 38, 0.2);
+    background-image: url(../images/bg-image-hero-1-mob-2x.jpg);
+  }
 }
 
 .left-side {
@@ -104,7 +159,7 @@ body {
   display: flex;
   flex-direction: column;
   /* gap: 20px 31px; */
-  margin-left: 31px;
+  /* margin-left: 31px; */
 }
 
 .hero-title {
@@ -141,8 +196,6 @@ body {
 .about {
   padding-top: 84px;
   padding-bottom: 84px;
-  margin-left: 31px;
-  margin-right: 31px;
 }
 
 .about-img {
@@ -156,14 +209,13 @@ body {
   letter-spacing: 0.02em;
   color: var(--text-color);
   margin-bottom: 40px;
+  margin-right: 31px;
 }
 /*------------------- ABOUT----------------- */
 /*------------------- SERVICE-PRICES----------------- */
 .services-prices {
   padding-top: 84px;
   padding-bottom: 84px;
-  /* margin-left: 31px; */
-  /* background-color: #111319; */
   background-image: linear-gradient(
       rgba(17, 19, 25, 0.2),
       rgba(17, 19, 25, 0.2)
@@ -178,7 +230,6 @@ body {
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .service-prices {
-    /* background-color: #111319; */
     background-image: linear-gradient(#111319, #111319),
       url(../images/bg-service-prices-mob-2x.jpg);
   }
@@ -191,21 +242,17 @@ body {
 }
 
 .services-prices-table {
-  padding: 30px;
   margin-top: 44px;
-  margin-left: 31px;
-  margin-right: 31px;
   margin-bottom: 50px;
-  /* display: flex; */
-  /* flex-direction: row;
-  justify-content: space-between; */
-  width: auto;
-  height: auto;
   background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
 }
 
 .services-prices-list {
-  padding-left: 0;
+  padding: 30px;
+}
+
+.services-prices-item:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .services-prices-item {
@@ -217,7 +264,6 @@ body {
 
 .services-prices-item::before {
   content: "";
-  /* width: 100%; */
   height: 1px;
   background-color: rgba(157, 164, 189, 0.12);
   flex-grow: 1;
@@ -233,19 +279,12 @@ body {
 .text:first-child {
   order: -1;
 }
-.
-/* .price::before {
-  content: "";
-  display: inline-block;
-  flex-grow: 1;
-  height: 1px;
-  width: 100%;
-  gap: 3px 1px;
-  background: rgba(157, 164, 189, 0.12);
-} */
+
+.text {
+  margin-bottom: 0;
+}
 
 .price {
-  margin-left: 31px;
   text-align: right;
   font-weight: 400;
   font-size: 14px;
@@ -265,30 +304,23 @@ body {
 .benefits {
   padding-top: 84px;
   padding-bottom: 84px;
-  margin-left: 31px;
 }
 
-/* .benefits-container {
-  display: flex;
-} */
+.benefits-about {
+  margin-bottom: 44px;
+}
 
 .benefits-list {
   display: flex;
   width: 416px;
   flex-wrap: wrap;
-  background: #f7f7f7;
 }
 
-.about-benefits {
-  /* padding: 20px 35px; */
-  /* margin-left: 32px; */
-  /* margin-right: 31px;
-  display: flex;
-  justify-content: space-between;
-  gap: 30px;
+.benefits-item {
   width: 193px;
-  height: 133px; */
-  /* background: #f7f7f7; */
+  height: 133px;
+  padding: 20px 35px 20px 36px;
+  background: #f7f7f7;
 }
 
 .benefits-item:nth-child(odd) {
@@ -316,7 +348,9 @@ body {
   font-weight: 600;
   font-size: 16px;
   line-height: 1.37;
-  color: var(--accent-color);
+  color: transparent;
+
+  text-shadow: 0 9px var(--accent-color);
 }
 
 .benefits-text {
