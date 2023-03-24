@@ -183,73 +183,316 @@
         </div>
       </section>
       <!-- /*------------------- MASTERS----------------- */ -->
-      <!-- <section class="masters">
+      <section class="masters">
         <div class="container">
           <p class="suptitle suptitle-theme-light">
             для справжніх поціновувачів атмосфери
           </p>
-          <h2 class="title">Наші майстри</h2>
+          <h2 class="title-dark">Наші майстри</h2>
           <ul class="masters-list list">
             <li class="masters-item">
-              <img class="masters-img" src="./images/John Smith.jpg" alt="" />
-              <h3 class="masters-name">John Smith</h3>
-              <p class="masters-about">Extreme Barber</p>
-              <svg>
-                <use></use>
-              </svg>
+              <picture
+                ><source
+                  srcset="
+                    ./images/John-Smith.jpg    1x,
+                    ./images/John-Smith-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="
+                    ./images/John-Smith-tab.jpg    1x,
+                    ./images/John-Smith-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="
+                    ./images/John-Smith-mob.jpg    1x,
+                    ./images/John-Smith-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)" />
+                <img
+                  class="masters-img"
+                  src="./images/John-Smith-mob.jpg"
+                  alt="master-photo"
+                  width="418"
+              /></picture>
+              <div class="masters-text">
+                <p class="masters-name">John Smith</p>
+                <p class="masters-about">Extreme Barber</p>
+                <ul class="social-list list">
+                  <li class="social-list-item">
+                    <a href="" class="social-list-link">
+                      <svg class="social-list-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#icon-instagram-2"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item">
+                    <a href="" class="social-list-link">
+                      <svg class="social-list-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#icon-twitter-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item">
+                    <a href="" class="social-list-link">
+                      <svg class="social-list-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#icon-facebook-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item">
+                    <a href="" class="social-list-link">
+                      <svg class="social-list-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#icon-linkedin-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="masters-item">
-              <img class="masters-img" src="./images/Michele Doe.jpg" alt="" />
-              <h3 class="masters-name">Michele Doe</h3>
-              <p class="masters-about">Extreme Barber</p>
-              <svg>
-                <use></use>
-              </svg>
+              <picture
+                ><source
+                  srcset="
+                    ./images/Michele-Doe.jpg    1x,
+                    ./images/Michele-Doe-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="
+                    ./images/Michele-Doe-tab.jpg    1x,
+                    ./images/Michele-Doe-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="
+                    ./images/Michele-Doe-mob.jpg    1x,
+                    ./images/Michele-Doe-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)" />
+                <img
+                  class="masters-img"
+                  src="./images/Michele-Doe-mob.jpg"
+                  alt="master-photo"
+                  width="418"
+              /></picture>
+              <div class="masters-text">
+                <p class="masters-name">Michele Doe</p>
+                <p class="masters-about">Extreme Barber</p>
+                <ul class="social-list list">
+                  <li class="social-list-item">
+                    <a href="" class="social-list-link">
+                      <svg class="social-list-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#icon-instagram-2"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item">
+                    <a href="" class="social-list-link">
+                      <svg class="social-list-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#icon-twitter-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item">
+                    <a href="" class="social-list-link">
+                      <svg class="social-list-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#icon-facebook-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item">
+                    <a href="" class="social-list-link">
+                      <svg class="social-list-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#icon-linkedin-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="masters-item">
-              <img class="masters-img" src="./images/Alan Black.jpg" alt="" />
-              <h3 class="masters-name">Alan Black</h3>
-              <p class="masters-about">Extreme Barber</p>
-              <svg>
-                <use></use>
-              </svg>
+              <picture
+                ><source
+                  srcset="
+                    ./images/Alan-Black.jpg    1x,
+                    ./images/Alan-Black-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="
+                    ./images/Alan-Black-tab.jpg    1x,
+                    ./images/Alan-Black-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="
+                    ./images/Alan-Black-mob.jpg    1x,
+                    ./images/Alan-Black-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)" />
+                <img
+                  class="masters-img"
+                  src="./images/Alan-Black-mob.jpg"
+                  alt="master-photo"
+                  width="418"
+              /></picture>
+              <div class="masters-text">
+                <p class="masters-name">Alan Black</p>
+                <p class="masters-about">Extreme Barber</p>
+                <ul class="social-list list">
+                  <li class="social-list-item">
+                    <a href="" class="social-list-link">
+                      <svg class="social-list-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#icon-instagram-2"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item">
+                    <a href="" class="social-list-link">
+                      <svg class="social-list-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#icon-twitter-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item">
+                    <a href="" class="social-list-link">
+                      <svg class="social-list-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#icon-facebook-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item">
+                    <a href="" class="social-list-link">
+                      <svg class="social-list-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#icon-linkedin-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- /*------------------- PRESENTATION----------------- */ -->
-      <!-- <section class="presentation">
+      <section class="presentation">
         <div class="container">
-          <h2 class="suptitle suptitle-theme-light">
+          <h2 class="visually-hidden">Презентація</h2>
+          <p class="suptitle suptitle-theme-light">
             Латинською мовою "барба" означає "борода"
-          </h2>
+          </p>
           <ul class="presentation-list list">
             <li class="presentation-item">
-              <img
-                class="presentation-img"
-                src="./images/haircut-2.jpg"
-                alt=""
-              />
+              <picture
+                ><source
+                  srcset="
+                    ./images/haircut-2.jpg    1x,
+                    ./images/haircut-2-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="
+                    ./images/haircut-2-tab.jpg    1x,
+                    ./images/haircut-2-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="
+                    ./images/haircut-2-mob.jpg    1x,
+                    ./images/haircut-2-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)" />
+                <img
+                  class="masters-img"
+                  src="./images/haircut-2-mob.jpg"
+                  alt="master-photo"
+                  width="418"
+              /></picture>
+            </li>
+
+            <li class="presentation-item">
+              <picture
+                ><source
+                  srcset="./images/shaving.jpg 1x, ./images/shaving-2x.jpg 2x"
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="
+                    ./images/shaving-tab.jpg    1x,
+                    ./images/shaving-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="
+                    ./images/shaving-mob.jpg    1x,
+                    ./images/shaving-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)" />
+                <img
+                  class="masters-img"
+                  src="./images/shaving-mob.jpg"
+                  alt="master-photo"
+                  width="418"
+              /></picture>
             </li>
             <li class="presentation-item">
-              <img class="presentation-img" src="./images/shaving.jpg" alt="" />
+              <picture
+                ><source
+                  srcset="./images/relax.jpg 1x, ./images/relax-2x.jpg 2x"
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="
+                    ./images/relax-tab.jpg    1x,
+                    ./images/relax-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="
+                    ./images/relax-mob.jpg    1x,
+                    ./images/relax-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)" />
+                <img
+                  class="masters-img"
+                  src="./images/relax-mob.jpg"
+                  alt="master-photo"
+                  width="418"
+              /></picture>
             </li>
             <li class="presentation-item">
-              <img class="presentation-img" src="./images/relax.jpg" alt="" />
-            </li>
-            <li class="presentation-item">
-              <img
-                class="presentation-img"
-                src="./images/haircut-3.jpg"
-                alt=""
-              />
+              <picture
+                ><source
+                  srcset="
+                    ./images/haircut-3.jpg    1x,
+                    ./images/haircut-3-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="
+                    ./images/haircut-3-tab.jpg    1x,
+                    ./images/haircut-3-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="
+                    ./images/haircut-3-mob.jpg    1x,
+                    ./images/haircut-3-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)" />
+                <img
+                  class="masters-img"
+                  src="./images/haircut-3-mob.jpg"
+                  alt="master-photo"
+                  width="418"
+              /></picture>
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- /*------------------- CONTACTS----------------- */ -->
-      <!-- <section class="contacts">
-        <div class="container left-side">
+      <section class="contacts">
+        <div class="container left-side-section">
           <h2 class="title">Онлайн-запис</h2>
           <ul class="registration-list list">
             <li class="registration-item">ім`я*</li>
@@ -258,24 +501,24 @@
           </ul>
           <button class="button" type="button">Відправити</button>
         </div>
-        <div class="container right-side">
+        <div class="container right-side-section">
           <h2 class="title">Контакти</h2>
           <ul class="contacts-list list">
             <li class="contacts-item">
-              <svg>
-                <use></use>
+              <svg class="contacts-icon" width="24" height="24">
+                <use href="./images/sprite.svg#icon-map-pin"></use>
               </svg>
               <p>ул. Васильківська, 7А Київ, 08132</p>
             </li>
             <li class="contacts-item">
-              <svg>
-                <use></use>
+              <svg class="contacts-icon" width="24" height="24">
+                <use href="./images/sprite.svg#icon-phone"></use>
               </svg>
               <p>+38 044 111 11 11</p>
             </li>
             <li class="contacts-item">
-              <svg>
-                <use></use>
+              <svg class="contacts-icon" width="24" height="24">
+                <use href="./images/sprite.svg#icon-mail"></use>
               </svg>
               <p>barbershop@email.com</p>
             </li>
@@ -283,7 +526,7 @@
           <h3 class="suptitle">Графік роботи</h3>
           <p>Щоденно з 9:00 до 22:00</p>
         </div>
-      </section> -->
+      </section>
     </main>
     <footer>
       <!-- /*------------------- FOOTER----------------- */ -->
